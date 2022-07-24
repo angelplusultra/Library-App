@@ -16,6 +16,12 @@ class GridItem {
         grid.appendChild(item)
 
     }
+
+    deleteBook(target) {
+        if(target.className === "delete") {
+            target.parentElement.parentElement.remove()
+        }
+    }
 }
 
 
@@ -26,9 +32,14 @@ document.querySelector(".modal").addEventListener('submit', function(e){
 
     const book = new Book(title, author, isbn)
     const gridItem = new GridItem
-
+    
     gridItem.addBookToGrid(book)
     modalcont.classList.remove('show')
+    //clears form
+    document.querySelector(".title").value = ""
+    document.querySelector(".author").value = ""
+    document.querySelector(".isbn").value = ""
+
     e.preventDefault()
 
 
@@ -50,3 +61,15 @@ exit.addEventListener('click', function(){
     modalcont.classList.remove('show')
 })
 
+
+
+//Remove an item from the grid
+
+const x = document.querySelector(".book-grid")
+
+x.addEventListener('click', function(e){
+    item = new GridItem
+    item.deleteBook(e.target)
+    e.preventDefault()
+    
+})
