@@ -1,3 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    font-family: 'Poppins';
+}
 #button {
     width: 1300px;
 }
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   box-shadow: 0px 5px 5px #203647;
+    padding: 15px;
+    background-color:  #292342;
+    color: white;
+}
+
+.addbook{
+    border: none;
+    background-color: transparent;
+    font-size: 100px;
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 10px;
+    transition: 0.2s;
+    width: 160px;
+    color: rgb(255, 255, 255);
+    
+
+    
+}
+
+.addbook:hover{
+    background-color: rgba(53, 81, 90, 0.281);
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2) rotate(90deg);
+
+}
+
+.main-content{
+    text-align: center;
+    margin-top: 50px;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    height: 87vh;
+    
+    
+}
+
+  
+
+
+  form{
+    color: black;
+    
+  }
+
+  body{
+
+ 
+    margin: 0;
+    padding: 0;
+    background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-size: larger;
+    border-radius: 20px;
+     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+    
+ 
+  }
+  .submit{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(180, 255, 180);
+  }
+
+  .submit:hover {
+    background-color: rgb(154, 216, 154);
+    cursor: pointer;
+  }
+
+  input{
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+  }
+  .show{
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.3s;
+    
+  }
+
+  .xbutton{
+    position: absolute;
+transform: translateX(120px) translateY(-120px);
+border-radius: 10px;
+border: none;
+width: 1.5vw;
+height: 2.5vh;
+
+
+background-color: rgba(255, 0, 0, 0.582);
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+ 
+  }
+.xbutton:hover{
+    background-color: rgb(131, 48, 48);
+    cursor: pointer;
+}
+
+  .book-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+   margin-left: 25%;
+   margin-right: 15%;
+    
+    margin-top: 50px;
+  }
+
+  .griditem{
+    color: white;
+    width:400px;
+    height: 400px;
+  
+   background: linear-gradient(#594e83, #9198e5);;
+
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5)
+    ;border: solid rgb(255, 255, 255)
+
+}
+    
+    

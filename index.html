@@ -5,48 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="bootstrap.min (1).css" />
 
     <title>Library App</title>
   </head>
   <body>
-    <div class="container mt-4">
-      <h1 class="display-4 text-center">
-        My <span class="text-primary">Book</span>List
-      </h1>
-      <form class="book-form" action="">
-        <div class="form-group">
+    <div class="header"><h1 class="library">My Library</h1></div>
+
+    <div class="main-content">
+      <button class="addbook">+</button>
+      <div action="" class="modal-container">
+        <button class="xbutton">X</button>
+        <form class="modal">
           <label for="title">Title</label>
-          <input type="text" id="title" class="form-control" required/>
-        </div>
-        <div class="form-group">
-          <label for="author">Author</label>
-          <input type="text" id="author" class="form-control" required />
-        </div>
-        <div class="form-group">
-          <label for="isbn">ISBN#</label>
-          <input type="text" id="isbn" class="form-control" required/>
-        </div>
-        <label for="submit"></label>
-        <input
-          type="submit"
-          value="Add Book"
-          id="button"
-          class="btn btn-primary btn-block "
-        />
-      </form>
-      <table class="table table-striped mt-5">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>ISBN</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody id="book-list"></tbody>
-      </table>
+          <input type="text" class="title" />
+          <label for="Author">Author</label>
+          <input type="text" class="author" />
+          <label for="ISBN">ISBN</label>
+          <input type="text" class="isbn" />
+          <input class="submit" type="submit" />
+        </form>
+      </div>
+      <div class="book-grid"></div>
     </div>
   </body>
-  <script src="main.js"></script>
+  <script src="index.js"></script>
 </html>
