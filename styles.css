@@ -202,3 +202,32 @@ color: white;
   
 }
 
+.deletionconfirmcont{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+background-color: rgba(0, 0, 0, 0.5);
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0;
+pointer-events: none;
+
+
+}
+
+
+.deletionconfirm{
+  background-color: rgb(187, 172, 255);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+
+.deletionconfirmshow{
+  opacity: 1;
+  pointer-events: all;
+
+}
